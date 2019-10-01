@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "name": "Ppl-Finals",
+  "version": "1.0.0",
+  "description": "Pragyan Premier League Finals",
+  "main": "app.js",
+  "scripts": {
+    "watch:react": "webpack-dev-server --progress --inline --hot",
+    "serve": "NODE_ENV=production node app.js",
+    "watch:node": "npm run fmt & nodemon app.js",
+    "watch": "npm run watch:node & npm run watch:react",
+    "prod": "webpack -p --config webpack.prod.config.babel.js && npm run serve",
+    "fmt": "gofmt -s -w . & prettier --print-width 120 --jsx-bracket-same-line --no-bracket-spacing --single-quote --tab-width 4 --write \"assets/**/*.jsx\" \"migrations/*.js\" \"models/*.js\" \"src/**/*.js\" \"*.js\""
+  },
+  "author": "Deltaforce",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^1.3.3",
+    "ejs": "2.5.7",
+    "express": "^4.16.2",
+    "jquery": "3.2.1",
+    "md5": "^2.2.1",
+    "mysql2": "^1.4.2",
+    "radium": "0.19.6",
+    "react": "16.0.0",
+    "react-circular-progressbar": "^1.0.0",
+    "react-dom": "16.0.0",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-toastify": "^4.5.2",
+    "request": "^2.83.0",
+    "seedrandom": "^3.0.1",
+    "sequelize": "^4.22.2",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "3.5.1",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.1",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "nodemon": "^1.12.1",
+    "prettier": "1.15.3",
+    "react-hot-loader": "3.1.1",
+    "sequelize-cli": "3.0.0",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}

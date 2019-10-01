@@ -1,0 +1,22 @@
+{
+  "name": "ppl",
+  "description": "Pragyan Premier League",
+  "main": "app.js",
+  "authors": [
+    "Deltaforce"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/delta/ppl-finals",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1",
+    "materialize": "0.100.2"
+  }
+}

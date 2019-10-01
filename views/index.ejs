@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/ReactToastify.min.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/CircularProgressBar.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+
+		<title>PPL Finals | 2019</title>
+	</head>
+	<body>
+		<div id="content"></div>
+		<% for (var i = 0; i < scripts.length; i++) { %>
+            <script type="text/javascript" src=<%= scripts[i] %>></script>
+    	<% } %>
+	</body>
+</html>
